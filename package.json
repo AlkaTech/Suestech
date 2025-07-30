@@ -1,0 +1,28 @@
+{
+  "name": "airspace-hugo",
+  "version": "1.2.4",
+  "license": "MIT",
+  "author": "gethugothemes",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
+    "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
+    "dev:example": "cd exampleSite; hugo server --themesDir ../..",
+    "build:example": "cd exampleSite; hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
+    "preview:example": "cd exampleSite; hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
+    "project-setup": "node ./scripts/projectSetup.js",
+    "theme-setup": "node ./scripts/themeSetup.js"
+  },
+  "dependencies": {
+    "@tinacms/datalayer": "^1.4.0",
+    "next-auth": "^4.24.11",
+    "tinacms": "^2.8.1",
+    "tinacms-authjs": "^11.0.1",
+    "tinacms-gitprovider-github": "^3.0.0",
+    "upstash-redis-level": "^1.1.1"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.10.1",
+    "@types/node": "^24.1.0"
+  }
+}
