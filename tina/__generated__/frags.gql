@@ -1,0 +1,19 @@
+fragment UserParts on User {
+  __typename
+  users {
+    __typename
+    username
+    name
+    email
+    password {
+      value
+      passwordChangeRequired
+    }
+  }
+}
+
+fragment PostParts on Post {
+  __typename
+  title
+  body
+}
