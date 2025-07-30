@@ -13,9 +13,9 @@ export default defineConfig({
     UsernamePasswordAuthJSProvider(),
     branch,
     // Get this from tina.io
-    clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+    clientId: 'c6cde10b-55b5-4855-b5d3-5521eed2d7f7',
     // Get this from tina.io
-    token: process.env.TINA_TOKEN,
+    token: '1cfe7e72a765a5d52f3ea08d0678651141c835ba',
     build: {
         outputFolder: "admin",
         publicFolder: "static",
